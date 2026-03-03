@@ -17,13 +17,12 @@ public class StartBillingApplication {
     }
 
     // run this only on profile 'demo', avoid run this in test
-    @Profile("demo")
+   /* @Profile("demo")
     @Bean
-    CommandLineRunner initDatabase(ItemRepository repository) {
+    CommandLineRunner initDatabase(ProductRepository repository) {
         return args -> {
-            repository.save(new Item("A Guide to the Bodhisattva Way of Life", "Santideva", new BigDecimal("15.41")));
-            repository.save(new Item("The Life-Changing Magic of Tidying Up", "Marie Kondo", new BigDecimal("9.69")));
-            repository.save(new Item("Refactoring: Improving the Design of Existing Code", "Martin Fowler", new BigDecimal("47.99")));
-        };
+            repository.save(new Product("A Guide to the Bodhisattva Way of Life", "Santideva", new BigDecimal("15.41")));
+            repository.save(new Product("The Life-Changing Magic of Tidying Up", "Marie Kondo", new BigDecimal("9.69")));
+            repository.save(new Product("Refactoring: Improving the Design of Existing Code", "Martin Fowler", new BigDecimal("47.99")));
+        };*/
     }
-}
